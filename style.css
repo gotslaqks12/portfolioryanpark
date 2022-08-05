@@ -18,7 +18,7 @@ html{
     z-index: 999;
 }
 .navbar.sticky{
-    padding: 20px 0;
+    padding: 17px 0;
     background: black;
 }
 .navbar .logo a span{
@@ -32,7 +32,7 @@ html{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: crimson;
 }
 .menu-btn{
     color: #111;
@@ -44,6 +44,7 @@ html{
     color: #fff;
     font-size: 25px;;
     font-weight: 500;
+    margin-left: -150px;
 }
 .navbar .menu li{
     list-style: none;
@@ -63,20 +64,22 @@ html{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 20px;
+    
 }
 .home{
     display: flex;
-    background: url("images/background.jpg") no-repeat center;
+    background: url("images/sky.jpg");
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 0px;
 
 }
 .home .home-content .text-1{
@@ -94,13 +97,13 @@ html{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: white;
     color: #111;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid white;
+    border-radius: 10px;
+    border: 2px solid black;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
@@ -172,6 +175,7 @@ section .title{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
 }
 .about .about-content .right .text span{
     color: crimson;
@@ -217,8 +221,16 @@ section .title{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 15px 25px;
     cursor: pointer;
+}
+.projects .projects-content .click{
+    padding: 10px 10px;
+    border-color: black;
+    margin-top: 8px;
+    
+    justify-content: center;
+    align-items: center;
 }
 .projects .projects-content .card i{
     font-size: 50px;
@@ -226,7 +238,7 @@ section .title{
 }
 .projects .projects-content .card .box a{
     font-size: 25px;
-    color: yellowgreen;
+    color: black;
 }
 .projects .projects-content .card .box{
     transition: all 0.3s ease;
@@ -243,9 +255,10 @@ section .title{
     transition: color 0.3s ease;
 }
 .projects .projects-content .text{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    font-family: "Poppins", sans-serif;
 }
 /* .skills .title::after{
     content: "what I know";
@@ -358,60 +371,9 @@ section .title{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
-.contact .right form .fields{
+.contact .right .social{
     display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: "Poppins", sans-serif;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .email{
-    margin-left: 10px;
-}
-.contact .right form .button{
-    height: 47px;
-    width: 147px;
-}
-.contact .right form .button button{
-    height: 100%;
-    width: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: crimson;
-    background: none;
-
+    align-items: center;
 }
 @media (max-width: 1300px){
     .home .max-width{
